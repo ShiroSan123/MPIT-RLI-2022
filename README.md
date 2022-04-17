@@ -6,7 +6,7 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ShiroSan123&layout=compact)](https://github.com/ShiroSan123/github-readme-stats)
 
 # MPIT RLI 2022
-Наш проект LifeStyle («Classified») решает проблеу неудобоства бумажной медкарты у родителей (опекунов) с помощью цифровой медкарты на веб-платформе и геймификации введения здоровья ребёнка с помощью медицинских советов 
+Наш проект [LifeStyle](«Classified») решает проблеу неудобоства бумажной медкарты у родителей (опекунов) с помощью цифровой медкарты на веб-платформе и геймификации введения здоровья ребёнка с помощью медицинских советов 
 Инструменты: SublimeText, Visual Studio Code, Spotify
 ***
 Плагины
