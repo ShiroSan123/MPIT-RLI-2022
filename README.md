@@ -1,6 +1,7 @@
 <h1 align="center">Hi there, I'm Renat
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
-(https://readme-typing-svg.herokuapp.com?lines=Wyvern+team+Developer)
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?lines=Wyvern+team+Developer)](https://git.io/typing-svg)
 
 # MPIT_RLI_2022
 Наш проект [Deleted](«Classified») решает проблеу неудобноства бумажной медкарты у родителей (опекунов) с помощью цифровой медкарты на веб-платформе и геймификации введения здоровья ребёнка с помощью медицинских советов 
