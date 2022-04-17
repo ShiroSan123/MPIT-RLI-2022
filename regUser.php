@@ -7,7 +7,7 @@ $pass = '{$_POST["password]}';
 if ( strlen($login) > 20 || strlen($login) < 4 || strlen($pass) < 9 || strlen($pass) > 20) {
 	$_SESSION['RegAndSign'] = 1;
 	$_SESSION['tooLongPoL'] = 1;
-	header("Location: index.php?");
+	header("Location: indexReg.php?");
 	die();
 } else {
 	$query = "SELECT * FROM Users WHERE Login = '{$_POST["login"]}'";
@@ -18,12 +18,12 @@ if ( strlen($login) > 20 || strlen($login) < 4 || strlen($pass) < 9 || strlen($p
 		$query1 = "INSERT INTO Users (Login,FirstName,LastName,Patronymic,Mail,Phone,Password) Values ('{$_POST['login']}','{$_POST['firstName']}','{$_POST['lastName']}','{$_POST['patronymic']}','{$_POST['mail']}','{$_POST['phone']}','{$_POST['password']}')";
 		$Reg_insert = mysqli_query($connect, $query1);
 		$_SESSION['RegAndSign'] = 1;
-		header("Location: index.php");
+		header("Location: indexReg.php");
 		$_SESSION['tooLongPoL'] = 0;
 	} else {
 		$_SESSION['RegAndSign'] = 0;
 		$_SESSION['tooLongPoL'] = 0;
-		header("Location: index.php?");
+		header("Location: indexReg.php?");
 	}
 }
 ?>

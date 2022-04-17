@@ -9,74 +9,50 @@ $connect = mysqli_connect("127.0.0.1",root,"","MPIT-RLI-2022");
 	<title></title>
 	<!-- CSS only -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="asset/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="/path/to/jquery.mCustomScrollbar.css" />
+	<style>
+		
+	</style>
 </head>
 <body>
-	<div class="row">
-		<!-- Левая колонка -->
-		<div class="col-5 left-side">
-			<div class="col-12" style="height: 10vh;">
-				<div class="row" style="height: 10vh;">
-					<div class="col-12" style="height: 100%; padding-top: 5vh;">
-						<img src="asset/img/arrow.svg" alt="" style="height: 7vh; margin-left: 3vw;">
-						<img src="asset/img/logo.svg" alt="" style="height: 7vh; margin-left: 7vw;">
+	
+	<div>
+		<!-- ======= Banner and Header ======= -->
+		<div class="col-12" style="height: 80vh; background: #14C9C9; padding-top: 8vh;">
+			<!-- ======= Header ======= -->
+			<header id="header" class="fixed-top border border-dark" style="height: 8vh; background: #14C9C9;">
+				<div class="col-9 mx-auto align-items-center d-flex">
+					<div class="col-2" style="height: 8vh; padding-top: 1vh;">
+						<img class="" src="asset/img/logo.svg" id="logoMain" alt="" style="height: 6vh">
+					</div>
+					<div class="col-9" style="height: 8vh; padding-top: 2vh;">
+						<h4 style="margin-left: 1vw;"><a href="indexReg.php" class="get-started-btn text-dark" style="text-decoration: none; font-size: 1vw">Главная</a></h4>
+					</div>
+					<div class="col-1" style="height: 8vh; padding-top: 2vh;">
+						<h4 style="margin-left: 1vw;"><a href="indexReg.php" class="get-started-btn text-dark" style="text-decoration: none; font-size: 1vw;">Вход</a></h4>
 					</div>
 				</div>
+			</header>
+			<!-- End Header -->
+			<!-- ======= Banner ======= -->
+			<div class="col-9 mx-auto bg-success" style="height: 72vh">
+				<h1 style="font-size: 2vw;">Main text</h1>
 			</div>
-			<!-- Проверка на правильность регстрации или авторизации -->
-			<?php if ($_SESSION['RegAndSign'] == 1) { ?>
-				<!-- Блок с регистрацией -->
-				<div class="col-12" style="height: 90vh; padding-top: 10%;">
-					<div class="col-10 mx-auto">
-						<h3 class="pb-2">Регистрация</h3>
-						<!-- Форма для переноса на страницу авторизации -->
-						<form action="RegAndSign.php" method="post">
-							<p style="color: #F6F8FB;">Уже есть аккаунт?<input type="text" name="reg" style="display: none;" value="1"></input><button  class="btn-submit">Войти</button></p>
-						</form>
-						<form action="regUser.php" method="post">
-							<?php if ($_SESSION['tooLongPoL'] == 1) { ?>
-								<p style="background: #24eded;" class="rounded">Логин не может быть короче 3 и длиннее 20, а пароль не может быть короче 5 и длиннее 20</p>
-							<?php } ?>
-							<input type="text" required name="login" class="form-control rounded-pill btn-out" id="login" placeholder="Логин"><br>
-							<input type="text" required name="firstName" class="form-control rounded-pill btn-out" id="name" placeholder="Имя"><br>
-							<input type="text" required name="lastName" class="form-control rounded-pill btn-out" id="pass" placeholder="Фамилия"><br>
-							<input type="text" name="patronymic" class="form-control rounded-pill btn-out" id="login" placeholder="Отчество"><br>
-							<input type="text" required name="mail" class="form-control rounded-pill btn-out" id="name" placeholder="Почта"><br>
-							<input type="text" required name="phone" class="form-control rounded-pill btn-out" id="pass" placeholder="Телефон"><br>
-							<input type="password" required name="password" class="form-control rounded-pill btn-out" id="pass" placeholder="Пароль"><br>
-							<button class="btn rounded-pill mt-2" style="background: #FFFFFF">Зарегистрироваться</button><br>
-							<a href="" style="text-decoration: none;">Забыли пароль?</a>
-						</form>
-					</div>
-				</div>
-			<?php } else {?>
-				<!-- Блок с авторизацией -->
-				<div class="col-12" style="height: 90vh; padding-top: 10%;">
-					<div class="col-10 mx-auto">
-						<h3 class="pb-2">Авторизация</h3>
-						<!-- Форма для переноса на страницу регистрации -->
-						<form action="RegAndSign.php" method="post">
-							<p style="color:#F6F8FB;">Ещё не зарегестрировались?<input type="text" name="reg" style="display: none;" placeholder="0"></input><button  class="btn-submit">Зарегестрироваться</button></p></p>
-						</form>
-						<form action="regUser.php" method="post">
-							<input type="text" required name="login" class="form-control rounded-pill btn-out" id="login" placeholder="Логин"><br>
-							<input type="text" required name="firstName" class="form-control rounded-pill btn-out" id="name" placeholder="Имя"><br>
-							<input type="text" required name="lastName" class="form-control rounded-pill btn-out" id="pass" placeholder="Фамилия"><br>
-							<input type="text" name="patronymic" class="form-control rounded-pill btn-out" id="login" placeholder="Отчество"><br>
-							<input type="text" required name="mail" class="form-control rounded-pill btn-out" id="name" placeholder="Почта"><br>
-							<input type="text" required name="phone" class="form-control rounded-pill btn-out" id="pass" placeholder="Телефон"><br>
-							<input type="password" required name="password" class="form-control rounded-pill btn-out" id="pass" placeholder="Пароль"><br>
-							<button class="btn rounded-pill mt-2" style="background: #FFFFFF">Зарегистрироваться</button><br>
-							<a href="" style="text-decoration: none;">Забыли пароль?</a>
-						</form>
-					</div>
-				</div>
-			<?php } ?>
+			<!-- End Banner -->
 		</div>
-		<!-- Правая колонка -->
-		<div class="col-7 right-side">
+		<!-- End Banner and Header -->
+		<!-- ======= Main content ======= -->
+		<div class="col-12" style="height: 200vh;">
 			
 		</div>
+		<!-- End Main content -->
 	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="/path/to/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script>
+
+	</script>
 </body>
 </html>
