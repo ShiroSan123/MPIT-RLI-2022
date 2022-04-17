@@ -3,7 +3,7 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?lines=Wyvern+team+Developer;I+like+to+eat%2C+read%2C+play%2C+learn+something+new)](https://git.io/typing-svg)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ShiroSan123&layout=compact)](https://github.com/ShiroSan123/github-readme-stats)
 
 # MPIT_RLI_2022
 Наш проект [Deleted](«Classified») решает проблеу неудобноства бумажной медкарты у родителей (опекунов) с помощью цифровой медкарты на веб-платформе и геймификации введения здоровья ребёнка с помощью медицинских советов 
