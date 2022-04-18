@@ -19,7 +19,7 @@ $connect = mysqli_connect("127.0.0.1",root,"","MPIT-RLI-2022");
 				<div class="row" style="height: 10vh;">
 					<div class="col-12" style="height: 100%; padding-top: 5vh;">
 						<img class="main" src="asset/img/arrow.svg" id="arrowMain" alt="" style="height: 7vh; margin-left: 3vw;">
-						<img class="main" src="asset/img/logo.svg" id="logoMain" alt="" style="height: 7vh; margin-left: 7vw;">
+						<img class="main" src="asset/img/logos.svg" id="logoMain" alt="" style="height: 7vh; margin-left: 7vw;">
 					</div>
 				</div>
 			</div>
@@ -45,7 +45,7 @@ $connect = mysqli_connect("127.0.0.1",root,"","MPIT-RLI-2022");
 							<input type="text" required name="phone" class="form-control rounded-pill btn-out" id="pass" placeholder="Телефон"><br>
 							<input type="password" required name="password" class="form-control rounded-pill btn-out" id="pass" placeholder="Пароль"><br>
 							<button class="btn rounded-pill mt-2" style="background: #FFFFFF">Зарегистрироваться</button><br>
-							<a href="" style="text-decoration: none;">Забыли пароль?</a>
+							<a href="" style="text-decoration: none; color: gray">Забыли пароль?</a>
 						</form>
 					</div>
 				</div>
@@ -58,16 +58,11 @@ $connect = mysqli_connect("127.0.0.1",root,"","MPIT-RLI-2022");
 						<form action="RegAndSign.php" method="post">
 							<p style="color:#F6F8FB;">Ещё не зарегестрировались?<input type="text" name="reg" style="display: none;" placeholder="0"></input><button  class="btn-submit">Зарегестрироваться</button></p></p>
 						</form>
-						<form action="regUser.php" method="post">
+						<form action="signUser.php" method="post">
 							<input type="text" required name="login" class="form-control rounded-pill btn-out" id="login" placeholder="Логин"><br>
-							<input type="text" required name="firstName" class="form-control rounded-pill btn-out" id="name" placeholder="Имя"><br>
-							<input type="text" required name="lastName" class="form-control rounded-pill btn-out" id="pass" placeholder="Фамилия"><br>
-							<input type="text" name="patronymic" class="form-control rounded-pill btn-out" id="login" placeholder="Отчество"><br>
-							<input type="text" required name="mail" class="form-control rounded-pill btn-out" id="name" placeholder="Почта"><br>
-							<input type="text" required name="phone" class="form-control rounded-pill btn-out" id="pass" placeholder="Телефон"><br>
 							<input type="password" required name="password" class="form-control rounded-pill btn-out" id="pass" placeholder="Пароль"><br>
-							<button class="btn rounded-pill mt-2" style="background: #FFFFFF">Зарегистрироваться</button><br>
-							<a href="" style="text-decoration: none;">Забыли пароль?</a>
+							<button class="btn rounded-pill mt-2" style="background: #FFFFFF">Войти</button><br>
+							<a href="" style="text-decoration: none; color: gray;">Забыли пароль?</a>
 						</form>
 					</div>
 				</div>
