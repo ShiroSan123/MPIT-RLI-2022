@@ -18,6 +18,6 @@
 ***
 Языки программирования: PHP, HTML 5, JS, CSS.
 ***
-Хостинг: [cl20885.tmweb.ru](cl20885.tmweb.ru)
+Хостинг: cl20885.tmweb.ru
 Login: cl20885_rli
 Password: rli12345
