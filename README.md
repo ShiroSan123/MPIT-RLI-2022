@@ -1,7 +1,7 @@
 <h1 align="center">Hi there, I'm Renat
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?lines=«Where's Francis?»+team+Developer;I+like+to+eat%2C+read%2C+play%2C+learn+something+new)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?lines=«Where's+Francis?»+team+Developer;I+like+to+eat%2C+read%2C+play%2C+learn+something+new)](https://git.io/typing-svg)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ShiroSan123&layout=compact)](https://github.com/ShiroSan123/github-readme-stats)
 
